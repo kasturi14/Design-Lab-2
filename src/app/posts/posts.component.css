@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.big-box {
+    display: inline-block;
+    width: 47%;
+    margin: 40px 10px;
+    text-align: center;
+}
+.box {
+    padding: 5%;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    width: 500px;
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+.blogimg img{
+    padding: 20px;
+    height: 200px;
+}

@@ -1,0 +1,18 @@
+<div class="all-box">
+    <h2 style="text-align: center;">Create New Post</h2>
+    <div class="box">
+        <form (submit)="onSavePost(postForm)" #postForm="ngForm">
+            <label for="name">Name</label>
+            <input name="name" type="text" ngModel required>
+            <br>
+            <label for="desc">Description</label>
+            <textarea rows="6" name="desc" ngModel required></textarea>
+            <br>
+            <label for="imageUrl">Image Url</label>
+            <input type="text" name="imageUrl" id="imageUrl" ngModel required>
+            <br>
+            <button type="button" class="btn btn-secondary" type="submit">Save Post</button>
+        </form>
+    </div>
+    <h5>{{ispostedstr}}</h5>
+</div>

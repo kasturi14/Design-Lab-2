@@ -1,0 +1,24 @@
+<div class="container" *ngIf="posts.length>0">
+    <ng-container *ngFor="let post of posts; let i=index">
+        <div class="big-box" >
+
+        <div class="box">
+            <div class="blog-name">
+                <p class="pname">{{post.name}}</p>
+            </div>
+            <hr>
+            <div class="blogdesc">
+                <p class="pdesc">{{post.desc}}</p>
+            </div>
+            <div class="blogimg">
+                <img src="{{post.imageUrl}}" alt="">
+            </div>
+            <div class="btns">
+                <button *ngIf="userIsAuthenticated" type="button" class="btn btn-danger" (click)="onDelete(post.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+    </ng-container>
+</div>
+<div *ngIf="posts.length<=0" style="text-align: center; margin-top: 20px;"><h5>No Posts yet!</h5></div>
+

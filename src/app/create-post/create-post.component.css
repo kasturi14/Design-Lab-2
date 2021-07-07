@@ -1,0 +1,15 @@
+.box form {
+    display: flex; 
+    flex-direction: column;
+}
+.all-box {
+    position: relative;
+    padding: 30px;
+    width: 40%;
+    margin: 0 auto;
+}
+h5 {
+    margin-top: 30px;
+    text-align: center;
+    color: coral;
+}

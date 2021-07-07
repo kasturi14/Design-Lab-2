@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink ="/" style="font-size: 30px;"><img src="../../assets/logo.png" alt="" height="30">LoGeSqUe</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <button type="button" class="btn btn-dark" style="margin-right: 20px;" routerLink="/">
+                ALL POSTS
+            </button>
+            <button *ngIf="userIsAuthenticated" type="button" class="btn btn-dark" style="margin-right: 20px;" routerLink="/create">
+                CREATE NEW POST
+            </button>
+            <button *ngIf="!userIsAuthenticated"type="button" class="btn btn-dark" style="margin-right: 20px;" routerLink="/login">
+                LOGIN
+            </button>
+            <button *ngIf="userIsAuthenticated" type="button" class="btn btn-dark" (click)="onLogout()">
+                LOGOUT
+            </button>
+        </div>
+    </div>
+  </nav>
