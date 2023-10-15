@@ -1,7 +1,6 @@
 Lab Assignment
-Name: Kasturi NAndi
+Name: Kasturi Nandi
 Class Roll no.: 68
-University Roll no.: 10900117083
 
 
 
